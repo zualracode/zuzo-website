@@ -7,7 +7,7 @@
     <meta name="description" content="Premium online one-to-one music lessons built for real-world results.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=JetBrains+Mono:wght@100;400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,16 +23,17 @@
                 <a href="#faq">FAQ</a>
             </nav>
             <button class="btn-primary" onclick="openModal()">Book a Free Trial ↗</button>
-            <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+            <button class="mobile-menu-toggle" aria-label="Menu" onclick="document.querySelector('.desktop-nav').classList.toggle('active')">☰</button>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero bg-staves-subtle">
+            <div class="hero-staves"></div>
             <div class="hero-silhouettes">
-                <div class="silhouette s-guitar"></div>
-                <div class="silhouette s-piano"></div>
-                <div class="silhouette s-drums"></div>
+                <div class="musical-symbol ms-1">#</div>
+                <div class="musical-symbol ms-2">|</div>
+                <div class="musical-symbol ms-3">.</div>
             </div>
             <div class="container hero-content fade-up">
                 <h1 class="display-title">LEARN MUSIC.<br>MAKE IT YOURS.</h1>
@@ -140,25 +141,22 @@
             </div>
         </section>
 
-        <section id="teachers" class="section-pad bg-pearl">
-            <div class="container fade-up">
+        <section id="teachers" class="section-pad bg-pearl bg-staves-light">
+            <div class="container fade-up relative z-10">
                 <h2 class="section-title">Our Teachers</h2>
                 <div class="teacher-grid">
-                    <!-- PLACEHOLDER PROFILE -->
                     <div class="teacher-card">
                         <div class="teacher-image placeholder-img">PLACEHOLDER</div>
                         <h4>Alex Morgan</h4>
                         <span class="mono-label">Piano & Keyboard</span>
                         <p>ABRSM Grade 8 · 10+ years experience</p>
                     </div>
-                    <!-- PLACEHOLDER PROFILE -->
                     <div class="teacher-card">
                         <div class="teacher-image placeholder-img">PLACEHOLDER</div>
                         <h4>Maya Thomas</h4>
                         <span class="mono-label">Western Vocals</span>
                         <p>Trinity Certified · 8+ years experience</p>
                     </div>
-                    <!-- PLACEHOLDER PROFILE -->
                     <div class="teacher-card">
                         <div class="teacher-image placeholder-img">PLACEHOLDER</div>
                         <h4>Daniel Fernandes</h4>
@@ -172,7 +170,6 @@
         <section id="testimonials" class="section-pad bg-onyx text-pearl">
             <div class="container fade-up">
                 <div class="testimonial-slider">
-                    <!-- PLACEHOLDER TESTIMONIAL -->
                     <blockquote class="editorial-quote">
                         "Within a few months, we could actually see the difference in our daughter's confidence. She started practicing without us having to constantly remind her."
                         <footer>
@@ -180,30 +177,6 @@
                             <span class="mono-label">Parent of a 9-year-old student (Piano)</span>
                         </footer>
                     </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="section-pad bg-pearl">
-            <div class="container fade-up">
-                <h2 class="section-title">FAQ</h2>
-                <div class="accordion">
-                    <details>
-                        <summary>What ages do you teach?</summary>
-                        <p>Students from approximately 6 years old through adults and retirees.</p>
-                    </details>
-                    <details>
-                        <summary>Are lessons online?</summary>
-                        <p>Yes. Lessons are currently conducted online through Google Meet.</p>
-                    </details>
-                    <details>
-                        <summary>How long and frequent are lessons?</summary>
-                        <p>Lessons are 35 or 45 minutes, one-to-one, typically once a week (twice recommended for serious study).</p>
-                    </details>
-                    <details>
-                        <summary>Do parents receive progress updates?</summary>
-                        <p>Yes. Parent communication and progress feedback are an important part of the ZUZO experience.</p>
-                    </details>
                 </div>
             </div>
         </section>
@@ -251,32 +224,11 @@
                     <label for="contact">Email & Phone / WhatsApp</label>
                     <input type="text" id="contact" required>
                 </div>
-                <div class="form-group">
-                    <label for="instrument">Instrument</label>
-                    <select id="instrument" required>
-                        <option value="">Select Instrument</option>
-                        <option value="Western Vocals">Western Vocals</option>
-                        <option value="Indian Vocals">Indian Vocals</option>
-                        <option value="Guitar">Guitar</option>
-                        <option value="Piano / Keyboard">Piano / Keyboard</option>
-                        <option value="Drums">Drums</option>
-                        <option value="Music Theory">Music Theory / Exams</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="experience">Previous Experience</label>
-                    <input type="text" id="experience" placeholder="Beginner, currently learning, etc.">
-                </div>
-                <div class="form-group">
-                    <label for="notes">Additional Notes</label>
-                    <textarea id="notes" rows="3" placeholder="Goals, favorite songs, specific requirements..."></textarea>
-                </div>
                 <button type="submit" class="btn-primary w-100">REQUEST MY FREE TRIAL ↗</button>
                 <p id="form-status" class="form-status mono-label"></p>
             </form>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
