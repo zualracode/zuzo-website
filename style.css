@@ -5,3 +5,145 @@
 .programs-head>span{font-size:13px !important}
 .program-row>span,.program-row>i{font-size:12px !important}
 .hero-link{font-size:12px !important}
+
+/* ZUZO v10 — conversion/accessibility pass */
+body{color:#151515;background:#e8e4dc}
+.topbar{
+  background:#050505 !important;
+  color:#fff !important;
+  border-bottom:1px solid #333 !important;
+  height:104px !important;
+  z-index:999 !important;
+}
+.topbar .logo img{width:138px !important}
+.top-actions{font-size:14px !important}
+.top-actions>a{color:#fff !important;opacity:1 !important}
+.trial{
+  color:#fff !important;
+  border-color:#aaa !important;
+  font-size:13px !important;
+}
+.menu{display:none !important}
+
+.hero{
+  padding-top:145px;
+  min-height:100vh;
+}
+.hero:before{
+  background:radial-gradient(circle at 50% 34%,#fbf9f4 0,#eeeae2 45%,#d9d3c8 100%);
+}
+.hero-copy{
+  margin:auto auto 0;
+  width:min(860px,100%);
+}
+.hero .micro{
+  color:#4d4a45 !important;
+  font-size:13px !important;
+  font-weight:400;
+}
+.hero h1{
+  color:#080808;
+}
+.hero-usp{
+  width:min(560px,100%);
+  margin:30px auto 24px;
+  font-size:16px;
+  line-height:1.65;
+  color:#37342f;
+  font-weight:400;
+}
+.hero-primary{
+  position:relative;
+  z-index:10;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  min-width:235px;
+  padding:15px 22px;
+  border:1px solid #111;
+  border-radius:999px;
+  background:#111;
+  color:#fff;
+  font:12px "DM Mono",monospace;
+  letter-spacing:1px;
+  box-shadow:0 10px 24px #0002;
+  transition:transform .25s ease,background .25s ease;
+}
+.hero-primary:hover{
+  transform:translateY(-2px);
+  background:#000;
+}
+.hero-primary span{font-size:15px}
+.hero-bottom{
+  margin-top:34px !important;
+  color:#3f3c37 !important;
+  font-size:12px !important;
+}
+.hero-bottom span:nth-child(2){font-weight:400;color:#34312d}
+
+.hero-programs{
+  position:relative;
+  z-index:8;
+  width:min(1050px,100%);
+  margin:34px auto 0;
+  padding:16px 20px;
+  border-top:1px solid #aaa39a;
+  border-bottom:1px solid #aaa39a;
+  display:flex;
+  align-items:center;
+  gap:28px;
+  background:#eeeae2cc;
+  backdrop-filter:blur(5px);
+}
+.hero-programs-label{
+  flex:0 0 auto;
+  color:#3f3c37;
+  font:11px "DM Mono",monospace;
+  letter-spacing:1.4px;
+}
+.hero-programs-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 22px;
+  color:#222;
+  font-size:13px;
+}
+.hero-programs-list span:not(:last-child)::after{
+  content:" /";
+  color:#888;
+  margin-left:10px;
+}
+
+.instrument-stage{z-index:2}
+.figure{opacity:.96}
+.figure-mic{left:7%;bottom:18%;transform:scale(.88)}
+.figure-guitar{left:17%;bottom:17%;transform:scale(.78) rotate(-13deg)}
+.figure-keyboard{left:33%;bottom:12%;transform:scale(.62) rotate(-4deg);opacity:.72}
+.figure-piano{right:15%;bottom:18%;transform:scale(.82)}
+.figure-drum{right:6%;bottom:18%;transform:scale(.78)}
+.floor{bottom:18%;opacity:.38}
+
+.intro-band p,
+.people-grid article>p:last-child,
+.method-copy>p:not(.eyebrow),
+.programs-head p,
+.large-copy{
+  color:#4d4a45;
+}
+.program-row>span,.program-row>i{color:#55514b !important}
+.eyebrow,.section-index{color:#5b5750 !important}
+
+@media(max-width:800px){
+  .menu{display:block !important}
+  .topbar{height:82px !important}
+  .top-actions>a{display:none}
+  .hero{padding-top:110px}
+  .hero-usp{font-size:14px}
+  .hero-primary{min-width:225px}
+  .hero-programs{display:block;margin-top:25px}
+  .hero-programs-label{margin-bottom:10px}
+  .hero-programs-list{gap:7px 14px;font-size:11px}
+  .hero-bottom{font-size:9px !important;gap:10px}
+  .hero-bottom span:nth-child(2){display:none}
+}
