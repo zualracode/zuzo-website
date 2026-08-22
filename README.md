@@ -1,14 +1,13 @@
-# ZUZO Landing Page — Editorial v8
+# ZUZO Landing Page — v9 Cache-Busted
 
-AUDITED / CORRECTED VERSION
+This version addresses the deployment/cache issue observed on the live site.
 
-Changes from v7.1:
-1. The header is now an explicit opaque #050505 black strip with z-index 50.
-2. The white transparent SVG logo is explicitly used at 138px desktop width.
-3. Utility labels are explicitly set to 12–13px rather than relying on broad global font-size replacements.
-4. Body copy was kept at readable sizes instead of being accidentally inflated.
-5. Mobile header has its own black-bar dimensions and logo sizing.
-6. The hero remains visually separate from the black header.
+Changes:
+- `style.css?v=9` cache-bust added to index.html.
+- Defensive inline black-header CSS added directly to index.html.
+- White transparent SVG logo remains the actual logo asset.
+- Header and utility text sizing are explicit.
 
-Keep the existing CNAME file in GitHub.
-The trial form is front-end/demo only and should be connected to a form backend before launch.
+If the live site still shows the cream header after replacing index.html and style.css, the issue is deployment/file replacement rather than the CSS itself.
+
+Keep the existing CNAME file.
