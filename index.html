@@ -6,7 +6,7 @@
     <title>ZUZO School of Music | Real Music. Real Progress.</title>
     <meta name="description" content="Premium online one-to-one music lessons built for real-world results.">
     
-    <!-- Aggressive Cache Busting -->
+    <!-- Cache Busting Meta Tags -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css?v=3.1">
+    <!-- Appended version parameter to force browser to load new CSS -->
+    <link rel="stylesheet" href="style.css?v=2.0">
 </head>
 <body>
     <header class="site-header">
@@ -30,18 +31,17 @@
                 <a href="#faq">FAQ</a>
             </nav>
             <button class="btn-primary" onclick="openModal()">Book a Free Trial ↗</button>
-            <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+            <button class="mobile-menu-toggle" aria-label="Menu" onclick="document.querySelector('.desktop-nav').classList.toggle('active')">☰</button>
         </div>
     </header>
 
     <main>
         <section class="hero bg-staves-subtle">
             <div class="hero-staves"></div>
-            <!-- Refined minimalist silhouettes: massive, faint, architectural -->
             <div class="hero-silhouettes">
                 <div class="musical-symbol ms-1">#</div>
                 <div class="musical-symbol ms-2">|</div>
-                <div class="musical-symbol ms-3">O</div>
+                <div class="musical-symbol ms-3">.</div>
             </div>
             <div class="container hero-content fade-up">
                 <h1 class="display-title">LEARN MUSIC.<br>MAKE IT YOURS.</h1>
@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section id="programs" class="programs-strip">
+        <section class="programs-strip">
             <div class="container marquee">
                 <span>WESTERN VOCALS · INDIAN VOCALS · GUITAR · PIANO · DRUMS · THEORY</span>
             </div>
@@ -58,7 +58,7 @@
 
         <section id="why-zuzo" class="section-pad bg-pearl">
             <div class="container grid-2 fade-up">
-                <div class="section-header-wrap">
+                <div>
                     <h2 class="section-title">Music lessons that actually continue beyond the lesson.</h2>
                 </div>
                 <div class="copy-large">
@@ -124,7 +124,7 @@
 
         <section id="philosophy" class="section-pad bg-smoke text-onyx">
             <div class="container grid-2 fade-up">
-                <div class="section-header-wrap">
+                <div>
                     <h2 class="section-title">Real-world music.</h2>
                     <p class="copy-large">Music isn't just something you study. It's something you make.</p>
                 </div>
@@ -189,34 +189,10 @@
             </div>
         </section>
 
-        <section id="faq" class="section-pad bg-pearl">
-            <div class="container fade-up">
-                <h2 class="section-title">FAQ</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4>What ages do you teach?</h4>
-                        <p>Students from approximately 6 years old through adults and retirees.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Are lessons online?</h4>
-                        <p>Yes. Lessons are currently conducted online through Google Meet.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>How long and frequent are lessons?</h4>
-                        <p>Lessons are 35 or 45 minutes, one-to-one, typically once a week (twice recommended for serious study).</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Do parents receive progress updates?</h4>
-                        <p>Yes. Parent communication and progress feedback are a core part of the ZUZO experience.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="final-cta section-pad bg-charcoal text-pearl text-center">
             <div class="container fade-up">
                 <h2 class="display-title">Let's make something.</h2>
-                <p class="copy-large" style="margin: 0 auto 2rem auto; max-width: 600px;">Tell us what you'd like to learn. We'll take it from there.</p>
+                <p class="copy-large">Tell us what you'd like to learn. We'll take it from there.</p>
                 <button class="btn-large" onclick="openModal()">BOOK YOUR FREE TRIAL ↗</button>
             </div>
         </section>
@@ -226,7 +202,7 @@
         <div class="container grid-2">
             <div>
                 <img src="images/zuzo-logo.svg" alt="ZUZO" class="footer-logo">
-                <p class="mono-label" style="margin-top: 1.5rem;">School of Music<br>Online music lessons worldwide</p>
+                <p class="mono-label">School of Music<br>Online music lessons worldwide</p>
             </div>
             <div class="footer-links">
                 <a href="#why-zuzo">Why ZUZO</a>
@@ -239,14 +215,14 @@
     </footer>
 
     <!-- Trial Modal -->
-    <div id="trial-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div id="trial-modal" class="modal" aria-hidden="true">
         <div class="modal-content bg-pearl text-onyx">
-            <button class="close-modal" aria-label="Close modal">✕</button>
-            <h2 class="modal-title section-title" style="margin-bottom: 1.5rem;">Book a Trial</h2>
+            <button class="close-modal" onclick="closeModal()" aria-label="Close modal">✕</button>
+            <h2 class="modal-title">Book a Free Trial</h2>
             <form id="trial-form">
                 <div class="form-group">
                     <label for="parentName">Parent / Guardian Name</label>
-                    <input type="text" id="parentName" required autocomplete="name">
+                    <input type="text" id="parentName" required>
                 </div>
                 <div class="form-group">
                     <label for="studentName">Student Name & Age</label>
@@ -254,14 +230,15 @@
                 </div>
                 <div class="form-group">
                     <label for="contact">Email & Phone / WhatsApp</label>
-                    <input type="text" id="contact" required autocomplete="contact">
+                    <input type="text" id="contact" required>
                 </div>
-                <button type="submit" class="btn-primary w-100" style="margin-top: 1rem;">REQUEST MY FREE TRIAL ↗</button>
+                <button type="submit" class="btn-primary w-100">REQUEST MY FREE TRIAL ↗</button>
                 <p id="form-status" class="form-status mono-label"></p>
             </form>
         </div>
     </div>
     
-    <script src="script.js?v=3.1"></script>
+    <!-- Appended version parameter to force browser to load new JS -->
+    <script src="script.js?v=2.0"></script>
 </body>
 </html>
