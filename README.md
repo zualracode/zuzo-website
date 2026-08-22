@@ -1,1 +1,1 @@
-ZUZO smoothed v3. Unified HTML/CSS/JS based on the supplied blocks. CSS/JS cache-busted at v3.0. Keep CNAME when deploying to GitHub Pages.
+ZUZO v4 placement-fixed. Applied the supplied header, hero-copy, title, editorial-quote, and mobile layout fixes. Asset versions bumped to v4.0. Keep CNAME when deploying.
