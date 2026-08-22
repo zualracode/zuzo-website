@@ -9,5 +9,5 @@ Premium editorial-style landing page for ZUZO School of Music.
 - Trial form is front-end only and does NOT send submissions yet.
 - Connect Formspree (or another form backend) before launch.
 - Replace sample teacher details with verified bios/CVs.
-- Replace placeholder student photography.
+- Transparent ZUZO logo supplied by the client is used in the header.
 - Add the real WhatsApp/contact workflow.
