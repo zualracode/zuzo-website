@@ -1,24 +1,13 @@
-# ZUZO — Landing Page Redesign v6
+# ZUZO Landing Page — Draft v2
 
-A completely new editorial/art-school direction for ZUZO.
+Premium editorial-style landing page for ZUZO School of Music.
 
-Design direction:
-- Thin, sharp typography
-- High-contrast black / pearl palette
-- Restrained iridescent motion
-- Asymmetric editorial layouts
-- Scroll-triggered reveals
-- Marquee motion
-- Hover-reveal instrument rows
-- Animated orbital hero/section graphics
-- Custom cursor on desktop
-- Minimal interface chrome
-- Parent-first conversion path with free-trial modal
-
-The visual language is inspired by current Squarespace design principles such as strong typography, editorial composition, purposeful motion and high-contrast layouts, but this is custom HTML/CSS/JS rather than a copied template.
-
-Important:
-- Teacher profiles and testimonial are intentionally marked as samples.
-- Photography areas are placeholders.
-- Trial form is front-end only; connect Formspree or another form backend before launch.
-- Keep the existing CNAME file in your GitHub repository.
+## Important before launch
+- Teacher profiles are clearly marked as sample placeholders.
+- Testimonial is clearly marked as sample placeholder.
+- Student image is a placeholder.
+- Trial form is front-end only and does NOT send submissions yet.
+- Connect Formspree (or another form backend) before launch.
+- Replace sample teacher details with verified bios/CVs.
+- Transparent ZUZO logo supplied by the client is used in the header.
+- Add the real WhatsApp/contact workflow.
