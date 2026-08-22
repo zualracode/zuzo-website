@@ -2,107 +2,110 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ZUZO School of Music — one-to-one online music lessons for children and adults.">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ZUZO — School of Music</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<!-- Cache buster bumped to v=4.0 to guarantee fresh load -->
-<link rel="stylesheet" href="style.css?v=4.0">
-<script src="script.js?v=4.0" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=9">
+<style id="zuzo-header-v9">
+.topbar{
+  background:#050505 !important;
+  color:#f5f1e9 !important;
+  border-bottom:1px solid #292929 !important;
+  position:absolute !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  z-index:999 !important;
+  height:104px !important;
+}
+.topbar .logo img{
+  width:138px !important;
+  background:transparent !important;
+}
+.topbar .top-actions{
+  font-size:14px !important;
+}
+.topbar .trial{
+  font-size:13px !important;
+}
+</style>
 </head>
 <body>
-<header class="site-header">
-<button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="desktop-nav"><span></span><span></span></button>
-<a class="logo" href="#top" aria-label="ZUZO School of Music home"><img src="images/zuzo-logo.svg" alt="ZUZO School of Music"></a>
-<nav class="desktop-nav" id="desktop-nav" aria-label="Primary navigation">
-<a href="#why">Why ZUZO</a><a href="#programs">Programs</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a>
-</nav>
-<div class="header-actions"><button class="btn btn-header open-trial" type="button">Book a free trial <span>↗</span></button></div>
+<header class="topbar">
+  <button class="menu" aria-label="Menu"><span></span><span></span></button>
+  <a class="logo" href="#"><img src="images/zuzo-logo.svg" alt="ZUZO School of Music"></a>
+  <div class="top-actions"><a href="#programs">Programs</a><button class="trial open-trial">Book a free trial <b>↗</b></button></div>
 </header>
 
 <main>
-<section class="hero" id="top">
-<div class="hero-copy">
-<p class="micro">ONLINE MUSIC SCHOOL · WORLDWIDE</p>
-<h1 class="display-title">MAKE<br><em>MUSIC.</em></h1>
-<p class="hero-usp">One-to-one online music lessons, built around structured learning, real practice, regular feedback and meaningful progress.</p>
-<button class="btn btn-primary btn-large open-trial" type="button">BOOK A FREE 30-MIN TRIAL <span>↗</span></button>
-</div>
-<div class="instrument-stage" aria-hidden="true"><div class="musical-symbol ms-1">◖</div><div class="musical-symbol ms-2">◗</div><div class="musical-symbol ms-3">♪</div></div>
-<div class="hero-bottom"><span>AGES 6–60+</span><span>VOCALS · GUITAR · PIANO · DRUMS · THEORY</span><span>SCROLL ↓</span></div>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="micro">ONLINE MUSIC SCHOOL · WORLDWIDE</p>
+    <h1>MAKE<br><em>MUSIC.</em></h1>
+    <p class="intro">One-to-one lessons for young musicians, serious students and the grown-up who finally decided to start.</p>
+    <button class="hero-link open-trial">BOOK A FREE 30-MIN TRIAL <span>↗</span></button>
+  </div>
+
+  <div class="instrument-stage" aria-hidden="true">
+    <div class="figure figure-mic">
+      <div class="mic-head"></div><div class="mic-stem"></div><div class="mic-base"></div>
+    </div>
+    <div class="figure figure-guitar">
+      <div class="g-neck"></div><div class="g-head"></div><div class="g-body"></div><div class="g-hole"></div>
+    </div>
+    <div class="figure figure-piano">
+      <div class="p-top"></div><div class="p-body"></div><div class="p-legs"></div>
+    </div>
+    <div class="figure figure-drum">
+      <div class="drum-shell"></div><div class="drum-head"></div><div class="drum-leg l"></div><div class="drum-leg r"></div>
+    </div>
+    <div class="figure figure-keyboard">
+      <div class="keys"></div><div class="kb-base"></div>
+    </div>
+    <div class="floor"></div>
+  </div>
+
+  <div class="hero-bottom"><span>06 — 60+</span><span>VOCALS · GUITAR · PIANO · DRUMS · THEORY</span><span>SCROLL ↓</span></div>
 </section>
 
-<section class="hero-programs" id="programs">
-<div class="programs-label">LEARN ONE-TO-ONE</div>
-<div class="programs-list"><span>Western Vocals</span><span>Indian Vocals</span><span>Guitar</span><span>Piano</span><span>Drums</span><span>Music Theory</span></div>
+<section class="intro-band">
+  <div class="band-label">01 / WHY ZUZO</div>
+  <div>
+    <h2>Music lessons<br>that feel <i>alive.</i></h2>
+    <p>We took decades of music education experience and rebuilt the online lesson around one simple idea: the lesson shouldn't end when the video call does.</p>
+  </div>
 </section>
 
-<section class="section-pad intro-band" id="why">
-<div class="section-label">01 / WHY ZUZO</div>
-<div class="grid-2"><div><h2 class="section-title">Music lessons<br>that keep <em>going.</em></h2></div><div><p class="large-copy">We took decades of music education experience and rebuilt the online lesson around one simple idea: the lesson shouldn't end when the video call does.</p></div></div>
+<section class="programs" id="programs">
+  <div class="programs-head"><span>02 / PROGRAMS</span><p>Pick an instrument. We'll help them find a voice.</p></div>
+  <div class="program-row"><span>01</span><h3>Western Vocals</h3><i>Performance / Technique</i><b>↗</b></div>
+  <div class="program-row"><span>02</span><h3>Indian Vocals</h3><i>Technique / Repertoire</i><b>↗</b></div>
+  <div class="program-row"><span>03</span><h3>Guitar</h3><i>Electric / Acoustic / Classical</i><b>↗</b></div>
+  <div class="program-row"><span>04</span><h3>Piano</h3><i>Piano / Keyboard</i><b>↗</b></div>
+  <div class="program-row"><span>05</span><h3>Drums</h3><i>Rhythm / Performance</i><b>↗</b></div>
+  <div class="program-row"><span>06</span><h3>Theory & Exams</h3><i>Trinity / ABRSM / Rockschool</i><b>↗</b></div>
 </section>
 
-<section class="section-pad programs-section">
-<div class="section-heading"><span>02 / PROGRAMS</span><p>Pick an instrument. Bring the curiosity.</p></div>
-<div class="program-row"><span>01</span><h3>Western Vocals</h3><i>Performance / Technique</i><b>↗</b></div>
-<div class="program-row"><span>02</span><h3>Indian Vocals</h3><i>Technique / Repertoire</i><b>↗</b></div>
-<div class="program-row"><span>03</span><h3>Guitar</h3><i>Electric / Acoustic / Classical</i><b>↗</b></div>
-<div class="program-row"><span>04</span><h3>Piano</h3><i>Piano / Keyboard</i><b>↗</b></div>
-<div class="program-row"><span>05</span><h3>Drums</h3><i>Rhythm / Performance</i><b>↗</b></div>
-<div class="program-row"><span>06</span><h3>Theory &amp; Exams</h3><i>Trinity / ABRSM / Rockschool</i><b>↗</b></div>
-</section>
-
-<section class="section-pad how-it-works" id="how-it-works">
-<div><span class="section-label">03 / HOW IT WORKS</span><h2 class="section-title">The lesson<br>is only <em>part</em><br>of it.</h2></div>
-<div class="steps">
-<article><span>01</span><h3>Book a free trial</h3><p>Tell us about the student, their goals and what they would like to learn.</p></article>
-<article><span>02</span><h3>Meet the teacher</h3><p>A one-to-one 30-minute trial gives both sides a chance to see if it feels right.</p></article>
-<article><span>03</span><h3>Build the plan</h3><p>Lessons follow the student's level, interests and long-term goals.</p></article>
-<article><span>04</span><h3>Learn &amp; practise</h3><p>Weekly lessons are supported by practice plans, assignments and feedback.</p></article>
-</div>
-</section>
-
-<section class="section-pad final-cta"><p class="micro">THE FIRST STEP IS EASY</p><h2 class="editorial-quote">See what<br>they can <em>do.</em></h2><button class="btn btn-primary btn-large open-trial" type="button">BOOK THE FREE TRIAL <span>↗</span></button></section>
-
-<section class="section-pad faq-section" id="faq">
-<div><span class="section-label">04 / FAQ</span><h2 class="section-title">A few things<br>worth knowing.</h2></div>
-<div class="faq-list">
-<details><summary>What ages do you teach?<span>+</span></summary><p>Students from approximately 6 years old through adults and retirees.</p></details>
-<details><summary>Are lessons one-to-one?<span>+</span></summary><p>Yes. Every lesson is individual and tailored to the student's level and goals.</p></details>
-<details><summary>How long are lessons?<span>+</span></summary><p>Lessons are available in 35-minute and 45-minute formats.</p></details>
-<details><summary>Can students prepare for exams?<span>+</span></summary><p>Yes. We support Trinity, ABRSM and Rockschool pathways.</p></details>
-<details><summary>Is there a free trial?<span>+</span></summary><p>Yes. The first trial lesson is free and lasts 30 minutes.</p></details>
-</div>
+<section class="cta">
+  <p class="micro">THE FIRST STEP IS EASY</p>
+  <h2>See what<br>they can <i>do.</i></h2>
+  <button class="big-trial open-trial">BOOK THE FREE TRIAL <span>↗</span></button>
 </section>
 </main>
 
-<footer><img src="images/zuzo-logo.svg" alt="ZUZO"><p>Music education, rethought.</p><a href="https://instagram.com/zuzo.music" target="_blank" rel="noopener">@zuzo.music</a></footer>
-
-<div class="modal" id="trial-modal" aria-hidden="true">
-<div class="modal-backdrop"></div>
-<div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="trial-title">
-<button class="modal-close" type="button" aria-label="Close">×</button>
-<p class="micro">START HERE</p><h2 id="trial-title">Book a free trial.</h2><p class="modal-intro">Tell us a little about the student and we'll take it from there.</p>
-<form id="trial-form">
-<div class="form-grid">
-<label>Parent / guardian<input type="text" name="parent" required autocomplete="name"></label>
-<label>Student name<input type="text" name="student" required></label>
-<label>Student age<input type="number" name="age" min="6" required></label>
-<label>Instrument<select name="instrument" required><option value="">Choose an instrument</option><option>Western Vocals</option><option>Indian Vocals</option><option>Guitar</option><option>Piano / Keyboard</option><option>Drums</option><option>Music Theory / Exams</option></select></label>
-<label>Email<input type="email" name="email" required autocomplete="email"></label>
-<label>Phone / WhatsApp<input type="tel" name="phone" required autocomplete="tel"></label>
-</div>
-<label>Previous experience / additional notes<textarea name="notes" rows="4"></textarea></label>
-<button class="btn btn-primary submit-btn" type="submit">REQUEST FREE TRIAL <span>↗</span></button>
-<p class="form-note">Demo form — connect your enquiry endpoint before launch.</p>
-</form>
-<div class="form-success" hidden><strong>You're in.</strong><p>Thanks — we've received your request.</p></div>
-</div>
-</div>
+<div class="modal" id="modal">
+<div class="shade"></div><div class="modal-card"><button class="close">×</button><p class="micro">START HERE</p><h2>Book a free trial.</h2>
+<form id="trial">
+<div class="grid">
+<label>Parent / guardian<input required name="parent"></label><label>Student name<input required name="student"></label>
+<label>Student age<input required type="number" min="6" name="age"></label><label>Instrument<select required name="instrument"><option value="">Choose</option><option>Western Vocals</option><option>Indian Vocals</option><option>Guitar</option><option>Piano / Keyboard</option><option>Drums</option><option>Theory / Exams</option></select></label>
+<label>Email<input required type="email" name="email"></label><label>Phone<input required type="tel" name="phone"></label>
+</div><label>Notes<textarea name="notes" rows="4" placeholder="Experience, goals, favourite music, anything you'd like us to know…"></textarea></label>
+<button class="send" type="submit">REQUEST TRIAL <span>↗</span></button></form>
+<div class="done"><strong>You're in.</strong><p>This demo form is ready to connect to your enquiry system.</p></div>
+</div></div>
+<script src="script.js"></script>
 </body>
 </html>
