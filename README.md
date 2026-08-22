@@ -1,17 +1,13 @@
-# ZUZO Music School — Draft
+# ZUZO Landing Page — Draft v2
 
-This is the first test version of the ZUZO website.
+Premium editorial-style landing page for ZUZO School of Music.
 
-Files:
-- `index.html` — page structure/content
-- `style.css` — visual styling
-- `script.js` — JavaScript
-
-This is a static website and can be hosted for free using GitHub Pages.
-
-Next step:
-1. Create a GitHub repository.
-2. Upload these files to the repository.
-3. Enable GitHub Pages.
-4. Confirm the GitHub Pages URL works.
-5. Connect `zuzomusic.com` through GoDaddy DNS.
+## Important before launch
+- Teacher profiles are clearly marked as sample placeholders.
+- Testimonial is clearly marked as sample placeholder.
+- Student image is a placeholder.
+- Trial form is front-end only and does NOT send submissions yet.
+- Connect Formspree (or another form backend) before launch.
+- Replace sample teacher details with verified bios/CVs.
+- Replace placeholder student photography.
+- Add the real WhatsApp/contact workflow.
