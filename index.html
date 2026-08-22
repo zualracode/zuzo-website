@@ -1,244 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZUZO School of Music | Real Music. Real Progress.</title>
-    <meta name="description" content="Premium online one-to-one music lessons built for real-world results.">
-    
-    <!-- Cache Busting Meta Tags -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
-    
-    <!-- Appended version parameter to force browser to load new CSS -->
-    <link rel="stylesheet" href="style.css?v=2.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ZUZO School of Music — one-to-one online music lessons for children and adults.">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>ZUZO — School of Music</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3.0">
+<script src="script.js?v=3.0" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <img src="images/zuzo-logo.svg" alt="ZUZO School of Music" />
-            </a>
-            <nav class="desktop-nav">
-                <a href="#why-zuzo">Why ZUZO</a>
-                <a href="#programs">Programs</a>
-                <a href="#how-it-works">How it works</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-            <button class="btn-primary" onclick="openModal()">Book a Free Trial ↗</button>
-            <button class="mobile-menu-toggle" aria-label="Menu" onclick="document.querySelector('.desktop-nav').classList.toggle('active')">☰</button>
-        </div>
-    </header>
+<header class="site-header">
+<button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="desktop-nav"><span></span><span></span></button>
+<a class="logo" href="#top" aria-label="ZUZO School of Music home"><img src="images/zuzo-logo.svg" alt="ZUZO School of Music"></a>
+<nav class="desktop-nav" id="desktop-nav" aria-label="Primary navigation">
+<a href="#why">Why ZUZO</a><a href="#programs">Programs</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a>
+</nav>
+<div class="header-actions"><button class="btn btn-header open-trial" type="button">Book a free trial <span>↗</span></button></div>
+</header>
 
-    <main>
-        <section class="hero bg-staves-subtle">
-            <div class="hero-staves"></div>
-            <div class="hero-silhouettes">
-                <div class="musical-symbol ms-1">#</div>
-                <div class="musical-symbol ms-2">|</div>
-                <div class="musical-symbol ms-3">.</div>
-            </div>
-            <div class="container hero-content fade-up">
-                <h1 class="display-title">LEARN MUSIC.<br>MAKE IT YOURS.</h1>
-                <p class="hero-prop">One-to-one online music lessons built around structured learning, real practice, regular feedback and measurable progress.</p>
-                <button class="btn-large" onclick="openModal()">BOOK A FREE 30-MIN TRIAL ↗</button>
-            </div>
-        </section>
+<main>
+<section class="hero" id="top">
+<div class="hero-copy">
+<p class="micro">ONLINE MUSIC SCHOOL · WORLDWIDE</p>
+<h1 class="display-title">MAKE<br><em>MUSIC.</em></h1>
+<p class="hero-usp">One-to-one online music lessons, built around structured learning, real practice, regular feedback and meaningful progress.</p>
+<button class="btn btn-primary btn-large open-trial" type="button">BOOK A FREE 30-MIN TRIAL <span>↗</span></button>
+</div>
+<div class="instrument-stage" aria-hidden="true"><div class="musical-symbol ms-1">◖</div><div class="musical-symbol ms-2">◗</div><div class="musical-symbol ms-3">♪</div></div>
+<div class="hero-bottom"><span>AGES 6–60+</span><span>VOCALS · GUITAR · PIANO · DRUMS · THEORY</span><span>SCROLL ↓</span></div>
+</section>
 
-        <section class="programs-strip">
-            <div class="container marquee">
-                <span>WESTERN VOCALS · INDIAN VOCALS · GUITAR · PIANO · DRUMS · THEORY</span>
-            </div>
-        </section>
+<section class="hero-programs" id="programs">
+<div class="programs-label">LEARN ONE-TO-ONE</div>
+<div class="programs-list"><span>Western Vocals</span><span>Indian Vocals</span><span>Guitar</span><span>Piano</span><span>Drums</span><span>Music Theory</span></div>
+</section>
 
-        <section id="why-zuzo" class="section-pad bg-pearl">
-            <div class="container grid-2 fade-up">
-                <div>
-                    <h2 class="section-title">Music lessons that actually continue beyond the lesson.</h2>
-                </div>
-                <div class="copy-large">
-                    <p>Most online lessons stop when the video call ends. ZUZO continues the learning process.</p>
-                    <ul class="editorial-list">
-                        <li>Structured practice plans</li>
-                        <li>Custom assignments</li>
-                        <li>Practice videos & feedback</li>
-                        <li>Active parent communication</li>
-                        <li>Performance opportunities</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<section class="section-pad intro-band" id="why">
+<div class="section-label">01 / WHY ZUZO</div>
+<div class="grid-2"><div><h2 class="section-title">Music lessons<br>that keep <em>going.</em></h2></div><div><p class="large-copy">We took decades of music education experience and rebuilt the online lesson around one simple idea: the lesson shouldn't end when the video call does.</p></div></div>
+</section>
 
-        <section id="audiences" class="section-pad bg-onyx text-pearl">
-            <div class="container grid-2 fade-up">
-                <div class="audience-card">
-                    <span class="mono-label">01 / CHILDREN</span>
-                    <h3 class="card-title">For the child who can't stop singing.</h3>
-                    <p>Ages 6+. One-to-one attention, learning songs they actually like, structured practice, and regular parent updates to build confidence and accountability.</p>
-                </div>
-                <div class="audience-card">
-                    <span class="mono-label">02 / ADULTS</span>
-                    <h3 class="card-title">And for the grown-up who wishes they'd started sooner.</h3>
-                    <p>Whether you're a beginner, returning to an old hobby, or preparing for exams, our flexible learning adapts to your serious study or casual play.</p>
-                </div>
-            </div>
-        </section>
+<section class="section-pad programs-section">
+<div class="section-heading"><span>02 / PROGRAMS</span><p>Pick an instrument. Bring the curiosity.</p></div>
+<div class="program-row"><span>01</span><h3>Western Vocals</h3><i>Performance / Technique</i><b>↗</b></div>
+<div class="program-row"><span>02</span><h3>Indian Vocals</h3><i>Technique / Repertoire</i><b>↗</b></div>
+<div class="program-row"><span>03</span><h3>Guitar</h3><i>Electric / Acoustic / Classical</i><b>↗</b></div>
+<div class="program-row"><span>04</span><h3>Piano</h3><i>Piano / Keyboard</i><b>↗</b></div>
+<div class="program-row"><span>05</span><h3>Drums</h3><i>Rhythm / Performance</i><b>↗</b></div>
+<div class="program-row"><span>06</span><h3>Theory &amp; Exams</h3><i>Trinity / ABRSM / Rockschool</i><b>↗</b></div>
+</section>
 
-        <section id="how-it-works" class="section-pad bg-pearl">
-            <div class="container fade-up">
-                <h2 class="section-title text-center">How it works</h2>
-                <div class="steps-grid">
-                    <div class="step">
-                        <span class="mono-label">01</span>
-                        <h4>Book a Free Trial</h4>
-                        <p>Tell us about the student.</p>
-                    </div>
-                    <div class="step">
-                        <span class="mono-label">02</span>
-                        <h4>Meet Your Teacher</h4>
-                        <p>Have a one-to-one trial lesson.</p>
-                    </div>
-                    <div class="step">
-                        <span class="mono-label">03</span>
-                        <h4>Build the Plan</h4>
-                        <p>We understand the level, goals and interests.</p>
-                    </div>
-                    <div class="step">
-                        <span class="mono-label">04</span>
-                        <h4>Learn & Practice</h4>
-                        <p>Weekly lessons + structured practice.</p>
-                    </div>
-                    <div class="step">
-                        <span class="mono-label">05</span>
-                        <h4>Perform & Progress</h4>
-                        <p>Assessments, recordings, and measurable development.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section-pad how-it-works" id="how-it-works">
+<div><span class="section-label">03 / HOW IT WORKS</span><h2 class="section-title">The lesson<br>is only <em>part</em><br>of it.</h2></div>
+<div class="steps">
+<article><span>01</span><h3>Book a free trial</h3><p>Tell us about the student, their goals and what they would like to learn.</p></article>
+<article><span>02</span><h3>Meet the teacher</h3><p>A one-to-one 30-minute trial gives both sides a chance to see if it feels right.</p></article>
+<article><span>03</span><h3>Build the plan</h3><p>Lessons follow the student's level, interests and long-term goals.</p></article>
+<article><span>04</span><h3>Learn &amp; practise</h3><p>Weekly lessons are supported by practice plans, assignments and feedback.</p></article>
+</div>
+</section>
 
-        <section id="philosophy" class="section-pad bg-smoke text-onyx">
-            <div class="container grid-2 fade-up">
-                <div>
-                    <h2 class="section-title">Real-world music.</h2>
-                    <p class="copy-large">Music isn't just something you study. It's something you make.</p>
-                </div>
-                <div class="philosophy-grid">
-                    <div>
-                        <h4>Recording</h4>
-                        <p>Students learn how to record themselves.</p>
-                    </div>
-                    <div>
-                        <h4>Performing</h4>
-                        <p>Online recitals and live opportunities.</p>
-                    </div>
-                    <div>
-                        <h4>Creating</h4>
-                        <p>Produce high-quality music content.</p>
-                    </div>
-                    <div>
-                        <h4>Exams</h4>
-                        <p>Optional Trinity, ABRSM & Rockschool pathways.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section-pad final-cta"><p class="micro">THE FIRST STEP IS EASY</p><h2 class="editorial-quote">See what<br>they can <em>do.</em></h2><button class="btn btn-primary btn-large open-trial" type="button">BOOK THE FREE TRIAL <span>↗</span></button></section>
 
-        <section id="teachers" class="section-pad bg-pearl bg-staves-light">
-            <div class="container fade-up relative z-10">
-                <h2 class="section-title">Our Teachers</h2>
-                <div class="teacher-grid">
-                    <div class="teacher-card">
-                        <div class="teacher-image placeholder-img">PLACEHOLDER</div>
-                        <h4>Alex Morgan</h4>
-                        <span class="mono-label">Piano & Keyboard</span>
-                        <p>ABRSM Grade 8 · 10+ years experience</p>
-                    </div>
-                    <div class="teacher-card">
-                        <div class="teacher-image placeholder-img">PLACEHOLDER</div>
-                        <h4>Maya Thomas</h4>
-                        <span class="mono-label">Western Vocals</span>
-                        <p>Trinity Certified · 8+ years experience</p>
-                    </div>
-                    <div class="teacher-card">
-                        <div class="teacher-image placeholder-img">PLACEHOLDER</div>
-                        <h4>Daniel Fernandes</h4>
-                        <span class="mono-label">Guitar</span>
-                        <p>Rockschool · 12+ years experience</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section-pad faq-section" id="faq">
+<div><span class="section-label">04 / FAQ</span><h2 class="section-title">A few things<br>worth knowing.</h2></div>
+<div class="faq-list">
+<details><summary>What ages do you teach?<span>+</span></summary><p>Students from approximately 6 years old through adults and retirees.</p></details>
+<details><summary>Are lessons one-to-one?<span>+</span></summary><p>Yes. Every lesson is individual and tailored to the student's level and goals.</p></details>
+<details><summary>How long are lessons?<span>+</span></summary><p>Lessons are available in 35-minute and 45-minute formats.</p></details>
+<details><summary>Can students prepare for exams?<span>+</span></summary><p>Yes. We support Trinity, ABRSM and Rockschool pathways.</p></details>
+<details><summary>Is there a free trial?<span>+</span></summary><p>Yes. The first trial lesson is free and lasts 30 minutes.</p></details>
+</div>
+</section>
+</main>
 
-        <section id="testimonials" class="section-pad bg-onyx text-pearl">
-            <div class="container fade-up">
-                <div class="testimonial-slider">
-                    <blockquote class="editorial-quote">
-                        "Within a few months, we could actually see the difference in our daughter's confidence. She started practicing without us having to constantly remind her."
-                        <footer>
-                            <strong>Sarah M.</strong>
-                            <span class="mono-label">Parent of a 9-year-old student (Piano)</span>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
+<footer><img src="images/zuzo-logo.svg" alt="ZUZO"><p>Music education, rethought.</p><a href="https://instagram.com/zuzo.music" target="_blank" rel="noopener">@zuzo.music</a></footer>
 
-        <section class="final-cta section-pad bg-charcoal text-pearl text-center">
-            <div class="container fade-up">
-                <h2 class="display-title">Let's make something.</h2>
-                <p class="copy-large">Tell us what you'd like to learn. We'll take it from there.</p>
-                <button class="btn-large" onclick="openModal()">BOOK YOUR FREE TRIAL ↗</button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer bg-onyx text-ash">
-        <div class="container grid-2">
-            <div>
-                <img src="images/zuzo-logo.svg" alt="ZUZO" class="footer-logo">
-                <p class="mono-label">School of Music<br>Online music lessons worldwide</p>
-            </div>
-            <div class="footer-links">
-                <a href="#why-zuzo">Why ZUZO</a>
-                <a href="#programs">Programs</a>
-                <a href="#how-it-works">How it works</a>
-                <a href="#faq">FAQ</a>
-                <a href="https://instagram.com/zuzo.music" target="_blank" rel="noopener">Instagram: @zuzo.music</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Trial Modal -->
-    <div id="trial-modal" class="modal" aria-hidden="true">
-        <div class="modal-content bg-pearl text-onyx">
-            <button class="close-modal" onclick="closeModal()" aria-label="Close modal">✕</button>
-            <h2 class="modal-title">Book a Free Trial</h2>
-            <form id="trial-form">
-                <div class="form-group">
-                    <label for="parentName">Parent / Guardian Name</label>
-                    <input type="text" id="parentName" required>
-                </div>
-                <div class="form-group">
-                    <label for="studentName">Student Name & Age</label>
-                    <input type="text" id="studentName" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact">Email & Phone / WhatsApp</label>
-                    <input type="text" id="contact" required>
-                </div>
-                <button type="submit" class="btn-primary w-100">REQUEST MY FREE TRIAL ↗</button>
-                <p id="form-status" class="form-status mono-label"></p>
-            </form>
-        </div>
-    </div>
-    
-    <!-- Appended version parameter to force browser to load new JS -->
-    <script src="script.js?v=2.0"></script>
+<div class="modal" id="trial-modal" aria-hidden="true">
+<div class="modal-backdrop"></div>
+<div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="trial-title">
+<button class="modal-close" type="button" aria-label="Close">×</button>
+<p class="micro">START HERE</p><h2 id="trial-title">Book a free trial.</h2><p class="modal-intro">Tell us a little about the student and we'll take it from there.</p>
+<form id="trial-form">
+<div class="form-grid">
+<label>Parent / guardian<input type="text" name="parent" required autocomplete="name"></label>
+<label>Student name<input type="text" name="student" required></label>
+<label>Student age<input type="number" name="age" min="6" required></label>
+<label>Instrument<select name="instrument" required><option value="">Choose an instrument</option><option>Western Vocals</option><option>Indian Vocals</option><option>Guitar</option><option>Piano / Keyboard</option><option>Drums</option><option>Music Theory / Exams</option></select></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Phone / WhatsApp<input type="tel" name="phone" required autocomplete="tel"></label>
+</div>
+<label>Previous experience / additional notes<textarea name="notes" rows="4"></textarea></label>
+<button class="btn btn-primary submit-btn" type="submit">REQUEST FREE TRIAL <span>↗</span></button>
+<p class="form-note">Demo form — connect your enquiry endpoint before launch.</p>
+</form>
+<div class="form-success" hidden><strong>You're in.</strong><p>Thanks — we've received your request.</p></div>
+</div>
+</div>
 </body>
 </html>
