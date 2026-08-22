@@ -1,13 +1,8 @@
-# ZUZO Landing Page — Draft v2
+# ZUZO Landing Page — Editorial v7
 
-Premium editorial-style landing page for ZUZO School of Music.
+A focused landing-page concept inspired by the supplied reference: full-bleed visual hero, centered brand, minimal navigation, restrained typography, and strong object-led composition.
 
-## Important before launch
-- Teacher profiles are clearly marked as sample placeholders.
-- Testimonial is clearly marked as sample placeholder.
-- Student image is a placeholder.
-- Trial form is front-end only and does NOT send submissions yet.
-- Connect Formspree (or another form backend) before launch.
-- Replace sample teacher details with verified bios/CVs.
-- Transparent ZUZO logo supplied by the client is used in the header.
-- Add the real WhatsApp/contact workflow.
+The hero uses CSS-built black instrument silhouettes for vocals/microphone, guitar, piano, keyboard and drums, with subtle hover motion. The supplied transparent ZUZO SVG is used as the logo.
+
+The trial form is front-end/demo only and should be connected to a form backend before launch.
+Keep the existing CNAME file in GitHub.
