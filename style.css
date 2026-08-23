@@ -147,3 +147,23 @@ body{color:#151515;background:#e8e4dc}
   .hero-bottom{font-size:9px !important;gap:10px}
   .hero-bottom span:nth-child(2){display:none}
 }
+
+/* TEST PASS — plain header / no logo / no programs / no trial CTA */
+.site-header {
+    position: absolute !important;
+    inset: 0 0 auto !important;
+    width: 100% !important;
+    height: 104px !important;
+    display: block !important;
+    padding: 0 !important;
+    background: #050505 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.site-header > * { display: none !important; }
+.hero-programs, .programs, .programs-section { display: none !important; }
+.open-trial, .btn-header, .hero-primary, .trial, #trial-modal { display: none !important; }
+
+@media (max-width: 850px) {
+    .site-header { height: 82px !important; }
+}
