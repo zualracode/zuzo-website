@@ -1,1 +1,1 @@
-ZUZO Hero v8 — latest requested hero update. The horizontal floor line is removed, side instruments are moved farther away from MAKE MUSIC, the keyboard stays centered below the CTA, and the centered Book a free 30 min lesson button remains connected to the trial modal.
+ZUZO Hero v9 — headline changed from MAKE MUSIC. to LEARN MUSIC. No other hero layout changes applied.
