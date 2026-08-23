@@ -725,3 +725,33 @@ body {
     transition: none !important;
   }
 }
+
+/* V8 final hero cleanup */
+.hero .floor {
+  display: none !important;
+}
+
+.hero .figure-mic {
+  left: 10% !important;
+}
+
+.hero .figure-guitar {
+  left: 18% !important;
+}
+
+.hero .figure-piano {
+  right: 13% !important;
+}
+
+.hero .figure-drum {
+  right: 4% !important;
+}
+
+.hero .figure-keyboard {
+  left: 50% !important;
+  bottom: 9.5% !important;
+}
+
+.hero .hero-free-trial {
+  margin-top: 0 !important;
+}

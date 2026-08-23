@@ -23,3 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cta = document.querySelector('.hero-free-trial');
+  const modal = document.getElementById('modal');
+  if (cta && modal) {
+    cta.addEventListener('click', () => modal.classList.add('open'));
+  }
+});

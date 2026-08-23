@@ -1,1 +1,1 @@
-ZUZO V7 — reference-matched landing hero. Centralized MAKE MUSIC composition, surrounding instrument silhouettes, central Book a free 30 min lesson CTA, responsive mobile layout, and v7 cache busting.
+ZUZO Hero v8 — latest requested hero update. The horizontal floor line is removed, side instruments are moved farther away from MAKE MUSIC, the keyboard stays centered below the CTA, and the centered Book a free 30 min lesson button remains connected to the trial modal.
