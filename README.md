@@ -1,1 +1,1 @@
-ZUZO header iteration v5.0. Transparent supplied SVG logo on the left; About | Programs | Book a Demo on the right. Header follows the supplied reference with a plain black bar and generous separator spacing. Keep CNAME when deploying.
+ZUZO V7 — reference-matched landing hero. Centralized MAKE MUSIC composition, surrounding instrument silhouettes, central Book a free 30 min lesson CTA, responsive mobile layout, and v7 cache busting.

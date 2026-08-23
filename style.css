@@ -374,3 +374,354 @@ header.topbar .topbar-nav > span {
     margin: 0 10px !important;
   }
 }
+
+
+/* =========================================================
+   ZUZO V7 — REFERENCE-MATCHED HERO
+   Desktop composition follows the supplied 1580 × 996 reference.
+   ========================================================= */
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: #e8e4dc;
+  color: #111;
+}
+
+.topbar {
+  height: 116px !important;
+  min-height: 116px !important;
+  padding: 0 56px !important;
+}
+
+.topbar .topbar-logo img {
+  width: 155px !important;
+  height: auto !important;
+}
+
+.topbar .topbar-nav {
+  font-size: 14px !important;
+}
+
+.topbar .topbar-nav > span {
+  margin: 0 25px !important;
+}
+
+/* Hero fills the viewport below the browser chrome and keeps
+   the complete central composition visually separated. */
+.hero {
+  position: relative !important;
+  height: 100svh !important;
+  min-height: 760px !important;
+  padding: 116px 5vw 24px !important;
+  overflow: hidden !important;
+  display: block !important;
+  background: #e8e4dc !important;
+}
+
+.hero:before {
+  background: radial-gradient(
+    circle at 50% 42%,
+    #fbf9f4 0%,
+    #eeeae2 47%,
+    #d9d3c8 100%
+  ) !important;
+}
+
+/* One centered composition — nothing collides with the copy. */
+.hero-copy {
+  position: absolute !important;
+  z-index: 8 !important;
+  top: 49.5% !important;
+  left: 50% !important;
+  width: min(760px, 90vw) !important;
+  margin: 0 !important;
+  transform: translate(-50%, -45%) !important;
+  text-align: center !important;
+}
+
+.hero .micro {
+  margin: 0 0 30px !important;
+  font: 13px/1 "DM Mono", monospace !important;
+  letter-spacing: 2.2px !important;
+  color: #4d4a45 !important;
+}
+
+.hero h1 {
+  margin: 0 !important;
+  font-family: "Libre Baskerville", serif !important;
+  font-size: clamp(86px, 11.8vw, 170px) !important;
+  font-weight: 400 !important;
+  line-height: .88 !important;
+  letter-spacing: -8px !important;
+  color: #080808 !important;
+}
+
+.hero h1 em {
+  font-family: Manrope, Arial, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  letter-spacing: -9px !important;
+}
+
+.hero .intro {
+  width: 370px !important;
+  max-width: 90vw !important;
+  margin: 42px auto 28px !important;
+  font: 15px/1.55 Manrope, Arial, sans-serif !important;
+  color: #37342f !important;
+}
+
+.hero-free-trial {
+  position: relative;
+  z-index: 12;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  min-width: 380px;
+  padding: 17px 28px;
+  border: 1px solid #050505;
+  border-radius: 999px;
+  background: #050505;
+  color: #fff;
+  font: 14px/1 "Manrope", Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  transition: transform .3s cubic-bezier(.16,1,.3,1),
+              background .25s ease,
+              box-shadow .3s ease;
+}
+
+.hero-free-trial span {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.hero-free-trial:hover {
+  transform: translateY(-3px);
+  background: #171717;
+  box-shadow: 0 16px 32px rgba(0,0,0,.16);
+}
+
+/* Instruments sit around the central composition rather than through it. */
+.instrument-stage {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 3 !important;
+  pointer-events: none !important;
+}
+
+.floor {
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 18.5% !important;
+  opacity: .45 !important;
+}
+
+/* left */
+.figure-mic {
+  left: 15% !important;
+  bottom: 28% !important;
+  transform: scale(.84) !important;
+}
+
+.figure-guitar {
+  left: 24% !important;
+  bottom: 26.5% !important;
+  transform: scale(.88) rotate(-13deg) !important;
+}
+
+/* right */
+.figure-piano {
+  right: 20% !important;
+  bottom: 28% !important;
+  transform: scale(.90) !important;
+}
+
+.figure-drum {
+  right: 9% !important;
+  bottom: 28% !important;
+  transform: scale(.84) !important;
+}
+
+/* small keyboard underneath the copy */
+.figure-keyboard {
+  left: 50% !important;
+  bottom: 11.5% !important;
+  transform: translateX(-50%) rotate(-4deg) scale(.82) !important;
+}
+
+.hero-bottom {
+  position: absolute !important;
+  z-index: 10 !important;
+  left: 4.2% !important;
+  right: 4.2% !important;
+  bottom: 4.3% !important;
+  margin: 0 !important;
+  font: 12px/1 "DM Mono", monospace !important;
+  letter-spacing: 1px !important;
+  color: #34312d !important;
+}
+
+.hero-bottom span:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* The following sections remain in the project, but the first
+   viewport is intentionally clean and reference-focused. */
+@media (max-width: 800px) {
+  .topbar {
+    height: 78px !important;
+    min-height: 78px !important;
+    padding: 0 18px !important;
+  }
+
+  .topbar .topbar-logo img {
+    width: 104px !important;
+  }
+
+  .topbar .topbar-nav {
+    font-size: 11px !important;
+  }
+
+  .topbar .topbar-nav > span {
+    margin: 0 9px !important;
+  }
+
+  .hero {
+    height: 100svh !important;
+    min-height: 700px !important;
+    padding: 78px 16px 18px !important;
+  }
+
+  .hero-copy {
+    top: 45% !important;
+    width: 94vw !important;
+    transform: translate(-50%, -44%) !important;
+  }
+
+  .hero .micro {
+    margin-bottom: 20px !important;
+    font-size: 10px !important;
+    letter-spacing: 1.6px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(62px, 20.5vw, 112px) !important;
+    line-height: .9 !important;
+    letter-spacing: -5px !important;
+  }
+
+  .hero h1 em {
+    letter-spacing: -5px !important;
+  }
+
+  .hero .intro {
+    width: min(310px, 82vw) !important;
+    margin: 25px auto 20px !important;
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-free-trial {
+    min-width: min(310px, 82vw);
+    padding: 15px 20px;
+    font-size: 13px;
+    gap: 18px;
+  }
+
+  .figure-mic {
+    left: -2% !important;
+    bottom: 29% !important;
+    transform: scale(.48) !important;
+  }
+
+  .figure-guitar {
+    left: 8% !important;
+    bottom: 28% !important;
+    transform: scale(.50) rotate(-13deg) !important;
+  }
+
+  .figure-piano {
+    right: 2% !important;
+    bottom: 29% !important;
+    transform: scale(.52) !important;
+  }
+
+  .figure-drum {
+    right: -7% !important;
+    bottom: 28% !important;
+    transform: scale(.48) !important;
+  }
+
+  .figure-keyboard {
+    left: 50% !important;
+    bottom: 10% !important;
+    transform: translateX(-50%) rotate(-4deg) scale(.55) !important;
+  }
+
+  .floor {
+    bottom: 22% !important;
+  }
+
+  .hero-bottom {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 2.7% !important;
+    font-size: 8px !important;
+  }
+
+  .hero-bottom span:nth-child(2) {
+    display: none !important;
+  }
+
+  .hero-bottom span:first-child {
+    white-space: nowrap;
+  }
+
+  .hero-bottom span:last-child {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar .topbar-nav a:nth-of-type(1),
+  .topbar .topbar-nav a:nth-of-type(2),
+  .topbar .topbar-nav > span {
+    display: none !important;
+  }
+
+  .topbar .topbar-nav a:last-of-type {
+    font-size: 11px !important;
+  }
+
+  .hero-copy {
+    top: 43% !important;
+  }
+
+  .hero h1 {
+    font-size: 20vw !important;
+  }
+
+  .figure-mic,
+  .figure-guitar {
+    opacity: .88;
+  }
+
+  .figure-piano,
+  .figure-drum {
+    opacity: .88;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-free-trial {
+    transition: none !important;
+  }
+}
