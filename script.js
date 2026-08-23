@@ -1,2 +1,4 @@
-/* Test build: navigation, trial CTA and modal disabled intentionally. */
-document.addEventListener('DOMContentLoaded', () => {});
+document.addEventListener('DOMContentLoaded', () => {
+    // Header navigation is intentionally simple in this iteration.
+    // No trial modal or hamburger behavior is enabled yet.
+});
