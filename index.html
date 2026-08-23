@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5.0">
+<link rel="stylesheet" href="style.css?v=6.0">
 <style id="zuzo-header-v9">
 .topbar{
   background:#050505 !important;
@@ -33,10 +33,18 @@
 </style>
 </head>
 <body>
-<header class="topbar">
-  <button class="menu" aria-label="Menu"><span></span><span></span></button>
-  
-  <div class="top-actions"></div>
+<header class="topbar" aria-label="Primary navigation">
+  <a class="topbar-logo" href="#top" aria-label="ZUZO School of Music home">
+    <img src="images/zuzo-logo.svg" alt="ZUZO School of Music">
+  </a>
+
+  <nav class="topbar-nav" aria-label="Primary navigation">
+    <a href="#about">About</a>
+    <span aria-hidden="true">|</span>
+    <a href="#programs">Programs</a>
+    <span aria-hidden="true">|</span>
+    <a href="#book-demo">Book a Demo</a>
+  </nav>
 </header>
 
 <main id="book-demo">
